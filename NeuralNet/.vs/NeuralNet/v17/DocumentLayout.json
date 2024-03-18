@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|c:\\users\\brend\\onedrive - bcit\\desktop\\term 4\\digi4937\\neuralnet\\neuralnet\\neuralnet\\neuralnetwork\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\neuralnetwork\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\neuralnet\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\neuralnet\\mainwindow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\mainwindow.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\neuralnet\\digitalimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\digitalimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\neuralnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 92,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Network.cs",
+              "DocumentMoniker": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\NeuralNet\\NeuralNetwork\\Network.cs",
+              "RelativeDocumentMoniker": "NeuralNet\\NeuralNetwork\\Network.cs",
+              "ToolTip": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\NeuralNet\\NeuralNetwork\\Network.cs",
+              "RelativeToolTip": "NeuralNet\\NeuralNetwork\\Network.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAuwK8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T21:31:05.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.cs",
+              "DocumentMoniker": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\NeuralNet\\MainWindow.cs",
+              "RelativeDocumentMoniker": "NeuralNet\\MainWindow.cs",
+              "ToolTip": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\NeuralNet\\MainWindow.cs",
+              "RelativeToolTip": "NeuralNet\\MainWindow.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAuwCMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T18:38:48.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\NeuralNet\\MainWindow.Designer.cs",
+              "RelativeDocumentMoniker": "NeuralNet\\MainWindow.Designer.cs",
+              "ToolTip": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\NeuralNet\\MainWindow.Designer.cs",
+              "RelativeToolTip": "NeuralNet\\MainWindow.Designer.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAYwFoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T18:37:44.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DigitalImage.cs",
+              "DocumentMoniker": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\NeuralNet\\DigitalImage.cs",
+              "RelativeDocumentMoniker": "NeuralNet\\DigitalImage.cs",
+              "ToolTip": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\NeuralNet\\DigitalImage.cs",
+              "RelativeToolTip": "NeuralNet\\DigitalImage.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAQwHAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T18:32:32.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\NeuralNet\\Program.cs",
+              "RelativeDocumentMoniker": "NeuralNet\\Program.cs",
+              "ToolTip": "C:\\Users\\brend\\OneDrive - BCIT\\Desktop\\Term 4\\Digi4937\\NeuralNet\\NeuralNet\\NeuralNet\\Program.cs",
+              "RelativeToolTip": "NeuralNet\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T21:14:45.136Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 185,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
