@@ -35,6 +35,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.trainNetworkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.successRateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adjustNetowrkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPaint)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +87,9 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.trainNetworkToolStripMenuItem,
-            this.lToolStripMenuItem});
+            this.lToolStripMenuItem,
+            this.successRateToolStripMenuItem,
+            this.adjustNetowrkToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1297, 24);
@@ -105,6 +109,20 @@
             this.lToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.lToolStripMenuItem.Text = "Load Image";
             this.lToolStripMenuItem.Click += new System.EventHandler(this.lToolStripMenuItem_Click);
+            // 
+            // successRateToolStripMenuItem
+            // 
+            this.successRateToolStripMenuItem.Name = "successRateToolStripMenuItem";
+            this.successRateToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.successRateToolStripMenuItem.Text = "Success Rate";
+            this.successRateToolStripMenuItem.Click += new System.EventHandler(this.successRateToolStripMenuItem_Click);
+            // 
+            // adjustNetowrkToolStripMenuItem
+            // 
+            this.adjustNetowrkToolStripMenuItem.Name = "adjustNetowrkToolStripMenuItem";
+            this.adjustNetowrkToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.adjustNetowrkToolStripMenuItem.Text = "Adjust Netowrk";
+            this.adjustNetowrkToolStripMenuItem.Click += new System.EventHandler(this.adjustNetowrkToolStripMenuItem_Click);
             // 
             // MainWindow
             // 
@@ -140,5 +158,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem trainNetworkToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem successRateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adjustNetowrkToolStripMenuItem;
     }
 }

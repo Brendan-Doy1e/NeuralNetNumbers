@@ -244,5 +244,50 @@ namespace NeuralNet.NeuralNetwork
             Debug.WriteLine("Weights loaded from file.");
 
         }
+        public void AdjustNetworkStructure(int[] newNumbersOfNeurons)
+        {
+            // Reinitialize the network with the new structure
+            Layers = newNumbersOfNeurons.Length;
+            Neurons = new Neuron[Layers][];
+            Weights = new double[Layers - 1][][];
+            for (int i = 0; i < Layers; i++)
+            {
+                Neurons[i] = new Neuron[newNumbersOfNeurons[i]];
+                for (int j = 0; j < newNumbersOfNeurons[i]; j++)
+                    Neurons[i][j] = new Neuron();
+                if (i < Layers - 1)
+                {
+                    Weights[i] = new double[newNumbersOfNeurons[i]][];
+                    for (int j = 0; j < newNumbersOfNeurons[i]; j++)
+                    {
+                        Weights[i][j] = new double[newNumbersOfNeurons[i + 1]];
+                    }
+                }
+            }
+
+            // Optionally, you can reinitialize the weights here
+            SetRandomWeights();
+        }
+
+        public double EvaluatePerformance(DigitImage[] testData)
+        {
+            int correctPredictions = 0;
+
+            foreach (DigitImage image in testData)
+            {
+                double[] input = DigitImage.GetInput(image);
+                SetInput(input);
+                ForwardFeed();
+                int predictedLabel = GetMaxNeuronIndex(Layers - 1);
+
+                if (predictedLabel == image.label)
+                {
+                    correctPredictions++;
+                }
+            }
+
+            return (double)correctPredictions / testData.Length * 100.0; // Return accuracy as a percentage
+        }
     }
+
 }

@@ -19,11 +19,14 @@ namespace NeuralNet
     public partial class MainWindow : Form
     {
         private OpenFileDialog openFileDialog = new OpenFileDialog();
+        private string dataDirectory;
 
         public MainWindow()
         {
             InitializeComponent();
             Debug.WriteLine("MainWindow constructor called");
+
+            dataDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data");
 
         }
 
@@ -335,5 +338,27 @@ namespace NeuralNet
             return input;
         }
 
+        private void successRateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Load test data
+            string pixelFile = Path.Combine(dataDirectory, "t10k-images.idx3-ubyte");
+            string labelFile = Path.Combine(dataDirectory, "t10k-labels.idx1-ubyte");
+            int numTestImages = 10000; // Number of test images
+            DigitImage[] testData = DigitImage.LoadData(pixelFile, labelFile, numTestImages);
+
+            // Evaluate performance
+            double accuracy = network.EvaluatePerformance(testData);
+            MessageBox.Show($"Accuracy: {accuracy}%");
+        }
+
+        private void adjustNetowrkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Example: User specifies a new network structure
+            int[] newStructure = { 784, 150, 100, 10 }; // Adjust this based on user input
+            network.AdjustNetworkStructure(newStructure);
+
+            // Optionally, you can reinitialize the weights here
+            network.SetRandomWeights();
+        }
     }
 }
