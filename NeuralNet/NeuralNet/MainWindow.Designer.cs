@@ -32,8 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.buttonClear = new System.Windows.Forms.Button();
             this.pictureBoxPaint = new System.Windows.Forms.PictureBox();
-            this.TrainNetwork = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.trainNetworkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPaint)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // printDialog1
@@ -68,9 +71,9 @@
             // 
             this.pictureBoxPaint.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxPaint.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.pictureBoxPaint.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxPaint.Location = new System.Drawing.Point(12, 34);
             this.pictureBoxPaint.Name = "pictureBoxPaint";
-            this.pictureBoxPaint.Size = new System.Drawing.Size(280, 280);
+            this.pictureBoxPaint.Size = new System.Drawing.Size(256, 258);
             this.pictureBoxPaint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxPaint.TabIndex = 3;
             this.pictureBoxPaint.TabStop = false;
@@ -78,26 +81,41 @@
             this.pictureBoxPaint.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPaint_MouseMove);
             this.pictureBoxPaint.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPaint_MouseUp);
             // 
-            // TrainNetwork
+            // menuStrip1
             // 
-            this.TrainNetwork.Location = new System.Drawing.Point(388, 12);
-            this.TrainNetwork.Name = "TrainNetwork";
-            this.TrainNetwork.Size = new System.Drawing.Size(75, 23);
-            this.TrainNetwork.TabIndex = 4;
-            this.TrainNetwork.Text = "Train Network";
-            this.TrainNetwork.UseVisualStyleBackColor = true;
-            this.TrainNetwork.Click += new System.EventHandler(this.Train_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.trainNetworkToolStripMenuItem,
+            this.lToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1297, 24);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // trainNetworkToolStripMenuItem
+            // 
+            this.trainNetworkToolStripMenuItem.Name = "trainNetworkToolStripMenuItem";
+            this.trainNetworkToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.trainNetworkToolStripMenuItem.Text = "Train Network";
+            this.trainNetworkToolStripMenuItem.Click += new System.EventHandler(this.trainNetworkToolStripMenuItem_Click);
+            // 
+            // lToolStripMenuItem
+            // 
+            this.lToolStripMenuItem.Name = "lToolStripMenuItem";
+            this.lToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.lToolStripMenuItem.Text = "Load Image";
+            this.lToolStripMenuItem.Click += new System.EventHandler(this.lToolStripMenuItem_Click);
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(473, 303);
-            this.Controls.Add(this.TrainNetwork);
+            this.ClientSize = new System.Drawing.Size(1297, 303);
             this.Controls.Add(this.pictureBoxPaint);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MaximizeBox = false;
@@ -107,6 +125,8 @@
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainWindow_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPaint)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,6 +137,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.PictureBox pictureBoxPaint;
-        private System.Windows.Forms.Button TrainNetwork;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem trainNetworkToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lToolStripMenuItem;
     }
 }
