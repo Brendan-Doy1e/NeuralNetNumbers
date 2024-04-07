@@ -17,3 +17,4 @@ C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\Neura
 C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.exe
 C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.pdb
 C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.MainWindow.resources
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.NetworkAdjustmentForm.resources

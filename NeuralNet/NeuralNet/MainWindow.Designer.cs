@@ -122,7 +122,7 @@
             this.adjustNetowrkToolStripMenuItem.Name = "adjustNetowrkToolStripMenuItem";
             this.adjustNetowrkToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.adjustNetowrkToolStripMenuItem.Text = "Adjust Netowrk";
-            this.adjustNetowrkToolStripMenuItem.Click += new System.EventHandler(this.adjustNetowrkToolStripMenuItem_Click);
+            this.adjustNetowrkToolStripMenuItem.Click += new System.EventHandler(this.adjustNetworkToolStripMenuItem_Click);
             // 
             // MainWindow
             // 

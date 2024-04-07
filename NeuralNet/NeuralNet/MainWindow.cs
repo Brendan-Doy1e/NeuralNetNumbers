@@ -351,14 +351,20 @@ namespace NeuralNet
             MessageBox.Show($"Accuracy: {accuracy}%");
         }
 
-        private void adjustNetowrkToolStripMenuItem_Click(object sender, EventArgs e)
+        private void adjustNetworkToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Example: User specifies a new network structure
-            int[] newStructure = { 784, 150, 100, 10 }; // Adjust this based on user input
-            network.AdjustNetworkStructure(newStructure);
+            using (NetworkAdjustmentForm form = new NetworkAdjustmentForm())
+            {
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    int[] newStructure = form.NewStructure;
+                    network.AdjustNetworkStructure(newStructure);
 
-            // Optionally, you can reinitialize the weights here
-            network.SetRandomWeights();
+                    // Optionally, reinitialize the weights
+                    network.SetRandomWeights();
+                }
+            }
         }
+
     }
 }
