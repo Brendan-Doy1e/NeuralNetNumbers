@@ -214,15 +214,79 @@ namespace NeuralNet
            */
         }
 
+        /*        private void trainNetworkToolStripMenuItem_Click(object sender, EventArgs e)
+                {
+                    Debug.WriteLine("Train_Click called");
+
+                    // Disable the button to prevent multiple clicks during training
+                    trainNetworkToolStripMenuItem.Enabled = false;
+
+                    // Maybe show a message to indicate that training is starting
+                    MessageBox.Show("Training started...");
+
+                    string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                    string dataDirectory = Path.Combine(baseDirectory, "Data");
+                    string pixelFile = Path.Combine(dataDirectory, "train-images.idx3-ubyte");
+                    string labelFile = Path.Combine(dataDirectory, "train-labels.idx1-ubyte");
+                    int numImages = 60000; // Number of images in the dataset
+                    var stopWatch = new System.Diagnostics.Stopwatch();
+
+                    // Load training data
+                    DigitImage[] trainingData = DigitImage.LoadData(pixelFile, labelFile, numImages);
+
+                    // Initialize network
+                    int[] layers = { 784, 100, 100, 10 }; // Example: 784 input neurons (for 28x28 images), 250 hidden neurons, 100 hidden neurons, 10 output neurons (for digits 0-9)
+                    Network network = new Network(layers);
+                    network.SetRandomWeights();
+
+                    // Training parameters
+                    double learningRate = 0.1;
+                    int epochs = 10;
+
+                    // Debug information
+                    Debug.WriteLine($"Number of inputs: {layers[0]}");
+                    Debug.WriteLine($"Number of layers: {layers.Length}");
+                    Debug.WriteLine($"Number of neurons in hidden layers: {layers[1]} (assuming all hidden layers have the same number of neurons)");
+                    Debug.WriteLine($"Number of outputs: {layers[layers.Length - 1]}");
+                    Debug.WriteLine($"Number of epochs: {epochs}");
+
+                    stopWatch.Start();
+                    // Training loop
+                    for (int epoch = 0; epoch < epochs; epoch++)
+                    {
+                        foreach (DigitImage image in trainingData)
+                        {
+                            // Set input
+                            double[] input = DigitImage.GetInput(image);
+                            network.SetInput(input);
+
+                            // Forward propagation
+                            network.ForwardFeed();
+
+                            // Backpropagation
+                            network.BackPropogation(image.label, learningRate);
+                        }
+                    }
+
+                    stopWatch.Stop();
+                    Console.WriteLine($"Training time: {stopWatch.Elapsed} s");
+
+                    // Save trained weights
+                    network.SaveWeightsToFile("weights.txt");
+
+                    // Re-enable the button after training completes
+                    trainNetworkToolStripMenuItem.Enabled = true;
+
+                    // Update the status message
+                    MessageBox.Show("Training completed.");
+
+                }*/
         private void trainNetworkToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Debug.WriteLine("Train_Click called");
+            Debug.WriteLine("Training started...");
 
             // Disable the button to prevent multiple clicks during training
             trainNetworkToolStripMenuItem.Enabled = false;
-
-            // Maybe show a message to indicate that training is starting
-            MessageBox.Show("Training started...");
 
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
             string dataDirectory = Path.Combine(baseDirectory, "Data");
@@ -234,14 +298,16 @@ namespace NeuralNet
             // Load training data
             DigitImage[] trainingData = DigitImage.LoadData(pixelFile, labelFile, numImages);
 
-            // Initialize network
-            int[] layers = { 784, 100, 100, 10 }; // Example: 784 input neurons (for 28x28 images), 250 hidden neurons, 100 hidden neurons, 10 output neurons (for digits 0-9)
-            Network network = new Network(layers);
-            network.SetRandomWeights();
-
             // Training parameters
             double learningRate = 0.1;
             int epochs = 10;
+
+            // Debug information
+            Debug.WriteLine($"Number of inputs: {network.Neurons[0].Length}");
+            Debug.WriteLine($"Number of layers: {network.Layers}");
+            Debug.WriteLine($"Number of neurons in hidden layers: {network.Neurons[1].Length} (assuming all hidden layers have the same number of neurons)");
+            Debug.WriteLine($"Number of outputs: {network.Neurons[network.Layers - 1].Length}");
+            Debug.WriteLine($"Number of epochs: {epochs}");
 
             stopWatch.Start();
             // Training loop
@@ -262,7 +328,7 @@ namespace NeuralNet
             }
 
             stopWatch.Stop();
-            Console.WriteLine($"Training time: {stopWatch.Elapsed} s");
+            Debug.WriteLine($"Training time: {stopWatch.Elapsed}");
 
             // Save trained weights
             network.SaveWeightsToFile("weights.txt");
@@ -272,8 +338,8 @@ namespace NeuralNet
 
             // Update the status message
             MessageBox.Show("Training completed.");
-
         }
+
 
         private void lToolStripMenuItem_Click(object sender, EventArgs e)
         {
