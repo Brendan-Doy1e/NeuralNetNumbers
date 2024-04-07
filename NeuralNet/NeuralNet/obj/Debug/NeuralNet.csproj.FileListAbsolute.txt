@@ -7,3 +7,13 @@ C:\Users\brend\OneDrive - BCIT\Desktop\Term 4\Digi4937\NeuralNet\NeuralNet\Neura
 C:\Users\brend\OneDrive - BCIT\Desktop\Term 4\Digi4937\NeuralNet\NeuralNet\NeuralNet\bin\Debug\NeuralNet.pdb
 C:\Users\brend\OneDrive - BCIT\Desktop\Term 4\Digi4937\NeuralNet\NeuralNet\NeuralNet\obj\Debug\NeuralNet.exe
 C:\Users\brend\OneDrive - BCIT\Desktop\Term 4\Digi4937\NeuralNet\NeuralNet\NeuralNet\obj\Debug\NeuralNet.pdb
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\bin\Debug\NeuralNet.exe.config
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\bin\Debug\NeuralNet.exe
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\bin\Debug\NeuralNet.pdb
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.csproj.AssemblyReference.cache
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.Properties.Resources.resources
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.csproj.GenerateResource.cache
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.csproj.CoreCompileInputs.cache
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.exe
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.pdb
+C:\Users\brend\Source\Repos\NeuralNetNumbers\NeuralNet\NeuralNet\obj\Debug\NeuralNet.MainWindow.resources

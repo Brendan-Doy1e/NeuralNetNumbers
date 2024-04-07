@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.IO;
+using System.Diagnostics;
 
 namespace NeuralNet
 {
@@ -15,12 +16,19 @@ namespace NeuralNet
         public byte[][] pixels { get; set; }
         public byte label { get; set; }
 
+
+
+
         public DigitImage(int width, int height, byte[][] pixels, byte label)
         {
+            //Debug.WriteLine($"Creating DigitImage with label: {label}");
+
             this.width = width; this.height = height;
             this.pixels = new byte[height][];
+
             for (int i = 0; i < this.pixels.Length; ++i)
                 this.pixels[i] = new byte[width];
+
             for (int i = 0; i < height; ++i)
                 for (int j = 0; j < width; ++j)
                     this.pixels[i][j] = pixels[i][j];
@@ -29,26 +37,31 @@ namespace NeuralNet
 
         public static DigitImage[] LoadData(string pixelFile, string labelFile, int numImages)
         {
+           // Debug.WriteLine($"Loading data from files: {pixelFile}, {labelFile}");
+
             DigitImage[] result = new DigitImage[numImages];
             byte[][] pixels = new byte[28][];
             for (int i = 0; i < pixels.Length; ++i)
                 pixels[i] = new byte[28];
+
             FileStream ifsPixels = new FileStream(pixelFile, FileMode.Open);
             FileStream ifsLabels = new FileStream(labelFile, FileMode.Open);
             BinaryReader brImages = new BinaryReader(ifsPixels);
             BinaryReader brLabels = new BinaryReader(ifsLabels);
-            int magic1 = brImages.ReadInt32();
-            magic1 = ReverseBytes(magic1);
+
+            int magic1 = ReverseBytes(brImages.ReadInt32());
+            if (magic1 != 2051) throw new Exception("Error reading from first file");
             int imageCount = brImages.ReadInt32();
             imageCount = ReverseBytes(imageCount);
             int numRows = brImages.ReadInt32();
             numRows = ReverseBytes(numRows);
             int numCols = brImages.ReadInt32();
             numCols = ReverseBytes(numCols);
-            int magic2 = brLabels.ReadInt32();
-            magic2 = ReverseBytes(magic2);
+            int magic2 = ReverseBytes(brLabels.ReadInt32());
+            if (magic2 != 2049) throw new Exception("Error reading from second file");
             int numLabels = brLabels.ReadInt32();
             numLabels = ReverseBytes(numLabels);
+
             for (int di = 0; di < numImages; ++di)
             {
                 for (int i = 0; i < 28; ++i)
@@ -65,6 +78,8 @@ namespace NeuralNet
             }
             ifsPixels.Close(); brImages.Close();
             ifsLabels.Close(); brLabels.Close();
+            //Debug.WriteLine("Data loaded successfully.");
+
             return result;
         }
 

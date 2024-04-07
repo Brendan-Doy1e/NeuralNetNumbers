@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace NeuralNet.NeuralNetwork
 {
@@ -14,6 +15,8 @@ namespace NeuralNet.NeuralNetwork
         public void Activation()
         {
             Value = Network.Sigmoid(Value);
+            //Debug.WriteLine($"Neuron activated: Value = {Value}");
+
         }
     }
 }

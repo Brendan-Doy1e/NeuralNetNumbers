@@ -28,15 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonClear = new System.Windows.Forms.Button();
             this.pictureBoxPaint = new System.Windows.Forms.PictureBox();
+            this.TrainNetwork = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPaint)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,17 +78,27 @@
             this.pictureBoxPaint.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPaint_MouseMove);
             this.pictureBoxPaint.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxPaint_MouseUp);
             // 
+            // TrainNetwork
+            // 
+            this.TrainNetwork.Location = new System.Drawing.Point(388, 12);
+            this.TrainNetwork.Name = "TrainNetwork";
+            this.TrainNetwork.Size = new System.Drawing.Size(75, 23);
+            this.TrainNetwork.TabIndex = 4;
+            this.TrainNetwork.Text = "Train Network";
+            this.TrainNetwork.UseVisualStyleBackColor = true;
+            this.TrainNetwork.Click += new System.EventHandler(this.Train_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(473, 303);
+            this.Controls.Add(this.TrainNetwork);
             this.Controls.Add(this.pictureBoxPaint);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "MainWindow";
@@ -103,6 +109,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPaint)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -110,5 +117,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.PictureBox pictureBoxPaint;
+        private System.Windows.Forms.Button TrainNetwork;
     }
 }
