@@ -283,6 +283,8 @@ namespace NeuralNet
                 }*/
         private void trainNetworkToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Training started...");
+
             Debug.WriteLine("Training started...");
 
             // Disable the button to prevent multiple clicks during training

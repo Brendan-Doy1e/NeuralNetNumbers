@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\networkadjustmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|c:\\users\\brend\\source\\repos\\neuralnetnumbers\\neuralnet\\neuralnet\\networkadjustmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\networkadjustmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|c:\\users\\brend\\source\\repos\\neuralnetnumbers\\neuralnet\\neuralnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|c:\\users\\brend\\source\\repos\\neuralnetnumbers\\neuralnet\\neuralnet\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|c:\\users\\brend\\source\\repos\\neuralnetnumbers\\neuralnet\\neuralnet\\neuralnetwork\\neuron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,8 +31,8 @@
       "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\neuralnetwork\\network.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|c:\\users\\brend\\source\\repos\\neuralnetnumbers\\neuralnet\\neuralnet\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|c:\\users\\brend\\source\\repos\\neuralnetnumbers\\neuralnet\\neuralnet\\networkadjustmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7CAC6066-5A8B-4834-AF51-B445CCAE2E65}|NeuralNet\\NeuralNet.csproj|solutionrelative:neuralnet\\networkadjustmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "NetworkAdjustmentForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\brend\\source\\repos\\NeuralNetNumbers\\NeuralNet\\NeuralNet\\NetworkAdjustmentForm.cs",
               "RelativeDocumentMoniker": "NeuralNet\\NetworkAdjustmentForm.cs",
@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "NeuralNet\\NetworkAdjustmentForm.cs",
               "ToolTip": "C:\\Users\\brend\\source\\repos\\NeuralNetNumbers\\NeuralNet\\NeuralNet\\NetworkAdjustmentForm.cs",
               "RelativeToolTip": "NeuralNet\\NetworkAdjustmentForm.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAIwJoAAAABAAAA",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAAwI8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T23:01:18.288Z",
               "EditorCaption": ""
@@ -89,20 +89,20 @@
               "RelativeDocumentMoniker": "NeuralNet\\MainWindow.cs",
               "ToolTip": "C:\\Users\\brend\\source\\repos\\NeuralNetNumbers\\NeuralNet\\NeuralNet\\MainWindow.cs",
               "RelativeToolTip": "NeuralNet\\MainWindow.cs",
-              "ViewState": "AQIAABsBAAAAAAAAAAA4wFEBAAAAAAAA",
+              "ViewState": "AQIAABoBAAAAAAAAAAAuwCwBAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-07T06:08:14.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\brend\\source\\repos\\NeuralNetNumbers\\NeuralNet\\NeuralNet\\Program.cs",
               "RelativeDocumentMoniker": "NeuralNet\\Program.cs",
               "ToolTip": "C:\\Users\\brend\\source\\repos\\NeuralNetNumbers\\NeuralNet\\NeuralNet\\Program.cs",
               "RelativeToolTip": "NeuralNet\\Program.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAIwBcAAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-06T20:22:04.931Z",
               "EditorCaption": ""
@@ -122,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "MainWindow.cs [Design]",
               "DocumentMoniker": "C:\\Users\\brend\\source\\repos\\NeuralNetNumbers\\NeuralNet\\NeuralNet\\MainWindow.cs",
               "RelativeDocumentMoniker": "NeuralNet\\MainWindow.cs",
@@ -140,7 +140,7 @@
               "RelativeDocumentMoniker": "NeuralNet\\DigitalImage.cs",
               "ToolTip": "C:\\Users\\brend\\source\\repos\\NeuralNetNumbers\\NeuralNet\\NeuralNet\\DigitalImage.cs",
               "RelativeToolTip": "NeuralNet\\DigitalImage.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAcwHcAAABFAAAA",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAkwF0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T18:32:32.919Z",
               "EditorCaption": ""
@@ -153,7 +153,7 @@
               "RelativeDocumentMoniker": "NeuralNet\\NeuralNetwork\\Network.cs",
               "ToolTip": "C:\\Users\\brend\\source\\repos\\NeuralNetNumbers\\NeuralNet\\NeuralNet\\NeuralNetwork\\Network.cs",
               "RelativeToolTip": "NeuralNet\\NeuralNetwork\\Network.cs",
-              "ViewState": "AQIAAA0BAAAAAAAAAAAcwBQBAAANAAAA",
+              "ViewState": "AQIAAPoAAAAAAAAAAADwvw4BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T21:31:05.084Z",
               "EditorCaption": ""
