@@ -114,6 +114,7 @@ namespace NeuralNet
                     bmp.SetPixel(j, i, Color.FromArgb(pixelValue, pixelValue, pixelValue));
                 }
             }
+            Debug.WriteLine("Visualizing input array...");
             bmp.Save("input_visualization.png"); // Save the visualization to a file
         }
 

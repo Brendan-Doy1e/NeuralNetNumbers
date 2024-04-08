@@ -7,6 +7,7 @@ using System.IO;
 using System.Globalization;
 using System.Reflection;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace NeuralNet.NeuralNetwork
 {
@@ -204,6 +205,47 @@ namespace NeuralNet.NeuralNetwork
         }
 
 
+        /*      public void LoadWeightsFromFile(string path)
+              {
+                  Debug.WriteLine($"Loading weights from file: {path}");
+
+                  string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, path);
+                  if (!File.Exists(filePath))
+                  {
+                      // If the file doesn't exist, create it and initialize with random weights
+                      Debug.WriteLine("Weights file not found. Initializing with random weights.");
+
+                      SetRandomWeights();
+                      SaveWeightsToFile(path);
+                      return; // Return after creating the file and initializing weights
+                  }
+
+                  // Load weights from the file if it exists
+                  string text = File.ReadAllText(filePath);
+                  string[] textWeights = text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                  NumberFormatInfo formatInfo = CultureInfo.GetCultureInfo("de-DE").NumberFormat;
+                  int c = 0;
+
+                  for (int i = 0; i < Layers - 1; i++)
+                  {
+                      for (int j = 0; j < Neurons[i].Length; j++)
+                      {
+                          for (int k = 0; k < Neurons[i + 1].Length; k++)
+                          {
+                              if (!double.TryParse(textWeights[c], NumberStyles.Any, formatInfo, out double weightValue))
+                              {
+                                  Console.WriteLine($"Error parsing weight: {textWeights[c]} at index {c}");
+                                  continue;
+                              }
+                              Weights[i][j][k] = weightValue;
+                              c++;
+                          }
+                      }
+                  }
+                  Debug.WriteLine("Weights loaded from file.");
+
+              }*/
+
         public void LoadWeightsFromFile(string path)
         {
             Debug.WriteLine($"Loading weights from file: {path}");
@@ -211,39 +253,80 @@ namespace NeuralNet.NeuralNetwork
             string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, path);
             if (!File.Exists(filePath))
             {
-                // If the file doesn't exist, create it and initialize with random weights
                 Debug.WriteLine("Weights file not found. Initializing with random weights.");
-
                 SetRandomWeights();
                 SaveWeightsToFile(path);
-                return; // Return after creating the file and initializing weights
+                return;
             }
 
-            // Load weights from the file if it exists
             string text = File.ReadAllText(filePath);
             string[] textWeights = text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            List<double> weightsList = new List<double>();
             NumberFormatInfo formatInfo = CultureInfo.GetCultureInfo("de-DE").NumberFormat;
-            int c = 0;
 
+            foreach (var weightString in textWeights)
+            {
+                if (double.TryParse(weightString, NumberStyles.Any, formatInfo, out double weightValue))
+                {
+                    weightsList.Add(weightValue);
+                }
+                else
+                {
+                    Console.WriteLine($"Error parsing weight: {weightString}");
+                }
+            }
+
+            // Determine the structure of the network based on the number of weights
+            int[] newStructure = DetermineNetworkStructure(weightsList);
+            AdjustNetworkStructure(newStructure);
+
+            // Load the weights into the network
+            int c = 0;
             for (int i = 0; i < Layers - 1; i++)
             {
                 for (int j = 0; j < Neurons[i].Length; j++)
                 {
                     for (int k = 0; k < Neurons[i + 1].Length; k++)
                     {
-                        if (!double.TryParse(textWeights[c], NumberStyles.Any, formatInfo, out double weightValue))
+                        if (c < weightsList.Count)
                         {
-                            Console.WriteLine($"Error parsing weight: {textWeights[c]} at index {c}");
-                            continue;
+                            Weights[i][j][k] = weightsList[c++];
                         }
-                        Weights[i][j][k] = weightValue;
-                        c++;
                     }
                 }
             }
-            Debug.WriteLine("Weights loaded from file.");
 
+            Debug.WriteLine("Weights loaded from file and network structure adjusted.");
         }
+
+        private int[] DetermineNetworkStructure(List<double> weightsList)
+        {
+            // Assuming the number of neurons in the input and output layers are fixed
+            int inputLayerNeurons = 784; // Example: for a 28x28 image input
+            int outputLayerNeurons = 10;  // Example: for a 10-class classification problem
+
+            // Calculate the total number of connections (weights) between the input layer and the first hidden layer
+            int totalInputToHiddenWeights = inputLayerNeurons * outputLayerNeurons;
+
+            // Check if the total number of weights is enough for at least one hidden layer
+            if (weightsList.Count < totalInputToHiddenWeights + outputLayerNeurons)
+            {
+                throw new Exception("Not enough weights to determine the network structure.");
+            }
+
+            // Calculate the number of neurons in the hidden layers
+            // Assuming all hidden layers have the same number of neurons
+            int hiddenLayerNeurons = (weightsList.Count - outputLayerNeurons) / (inputLayerNeurons + outputLayerNeurons);
+
+            // Assuming one hidden layer for simplicity, but you can extend this logic for multiple hidden layers
+            return new int[] { inputLayerNeurons, hiddenLayerNeurons, outputLayerNeurons };
+        }
+
+
+
+
+
+
         public void AdjustNetworkStructure(int[] newNumbersOfNeurons)
         {
             // Reinitialize the network with the new structure
